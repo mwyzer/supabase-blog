@@ -15,6 +15,8 @@ export async function getStaticProps() {
 }
 
 export default function Home({ posts }) {
+  console.log(supabase.auth.user());
+
   return (
     <div className={styles.container}>
       <h1>Hello Guys!</h1>
